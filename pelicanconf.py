@@ -6,6 +6,8 @@ AUTHOR = u'Nicholas Terwoord'
 SITENAME = u'NT3R'
 SITEURL = ''
 
+PATH = 'content'
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
@@ -29,3 +31,5 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+THEME = 'themes/pelican-octopress-theme'
