@@ -41,5 +41,8 @@ PLUGINS = [
     'liquid_tags.img',
     'liquid_tags.video',
     'liquid_tags.include_code',
-    'liquid_tags.notebook'
 ]
+
+# Article paths
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
