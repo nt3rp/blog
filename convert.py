@@ -22,9 +22,10 @@ for filename in FILES:
     with open(filename, 'r') as old, open(new_file, 'a') as new:
         for line in old.readlines():
             if line.startswith('title: '):
-                title = line.split('title:')[1].strip()
-                slug = u'slug: {0}\r\n'.format(slugify(title))
-                new.write(line)
+                old_title = line.split('title:')[1].strip()[1:-1]
+                new_title = u'title: {0}\r\n'.format(old_title)
+                slug = u'slug: {0}\r\n'.format(slugify(old_title))
+                new.write(new_title)
                 new.write(slug)
             elif not line.startswith('---'):
                 new.write(line)
