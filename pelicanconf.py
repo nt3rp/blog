@@ -31,4 +31,15 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Theme setup
 THEME = 'themes/pelican-octopress-theme'
+
+# Plugin setup
+PLUGIN_PATH = 'plugins'
+PLUGINS = [
+    'liquid_tags.img',
+    'liquid_tags.video',
+    'liquid_tags.include_code',
+    'liquid_tags.notebook'
+]
