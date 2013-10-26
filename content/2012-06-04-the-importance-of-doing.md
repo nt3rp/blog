@@ -20,7 +20,7 @@ To provide a bit of context, *in the past*, we would often get together and, whe
 
 Oh, you're still here. Right, so there was a bit more to it than that. Let's make a brief detour. Take a look at this.
 
-{% img center /images/post/done_manifesto.png 400 %}
+{% img center /images/done_manifesto.png 400 %}
 
 Rubik's cubes. Awesome, right? There's a surprising bit of information encoded in this neat little image. I found this image in a LifeHacker article sometime last year talking about ["the Done Manifesto"](http://lifehacker.com/5864004/the-done-manifesto-lays-out-13-ground-rules-for-getting-to-done)). With a name like that, it shouldn't come as much of a surprise that it focused on *just doing things*. To single out a few of the manifesto's ideas:
 

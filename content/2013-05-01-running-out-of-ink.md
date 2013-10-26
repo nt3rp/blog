@@ -42,7 +42,7 @@ Move on!
 
 ## Take a break
 
-[{% img right /images/post/jlcm-duh.jpg 300 %}](http://www.digitalpimponline.com/strips.php?title=movie&id=24)
+[{% img right /images/jlcm-duh.jpg 300 %}](http://www.digitalpimponline.com/strips.php?title=movie&id=24)
 
 Uh-Duuuuuhhhh. [Don't beat yourself up](/2012/06/06/dont-beat-yourself-up/).
 

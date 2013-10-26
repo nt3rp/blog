@@ -11,7 +11,7 @@ Now that I've (lazily) established my (arguable) credentials, let's talk a bit a
 
 I've been fortunate enough to have received an invite for a rather interesting augmented reality game (ARG), you might have heard of it: [Ingress][Ingress]. On the surface, it's a very simple game (with some interesting mythos that's developing around it, but that too is aside from the point). The purpose of the game is to acquire as many *mind units* as possible as one of two sides: *the resistance*, or *the enlightened*. Acquiring *mind units* is as simple as connecting *portals* captured by your team (and claiming the population underneath the area). Acquiring *portals* is a simple as visiting a location... sort of.
 
-{% img center /images/post/ingress-map.png "Now, you're thinking with portals" %}
+{% img center /images/ingress-map.png "Now, you're thinking with portals" %}
 
 Things are **obviously** a bit more complicated than I've described, but at it's core, it's a simple game. Visit places, capture portals, connect portals.
 
