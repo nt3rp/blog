@@ -31,4 +31,21 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# Theme setup
 THEME = 'themes/pelican-octopress-theme'
+
+# Plugin setup
+PLUGIN_PATH = 'plugins'
+PLUGINS = [
+    'liquid_tags.img',
+    'liquid_tags.video',
+    'liquid_tags.youtube',
+    'liquid_tags.include_code',
+]
+
+# Article paths
+ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
+
+STATIC_PATHS = ['images', ]
