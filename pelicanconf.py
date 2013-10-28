@@ -7,6 +7,8 @@ SITENAME = u'NT3R'
 SITESUBTITLE=u'A blog that needs work'
 SITEURL = ''
 
+GITHUB_USER = u'nt3rp'
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'
