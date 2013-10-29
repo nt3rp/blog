@@ -16,8 +16,6 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 # --- Sidebar --- 
-GITHUB_USER = u'nt3rp'
-
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
@@ -25,6 +23,12 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
+
+# --- Theme-specific Settings ---
+GITHUB_USER = u'nt3rp'
+GITHUB_REPO_COUNT = 5
+GITHUB_SKIP_FORK = True
+GITHUB_SHOW_USER_LINK = True
 
 # --- Plugin Settings ---
 PLUGIN_PATH = 'plugins'
