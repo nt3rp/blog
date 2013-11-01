@@ -10,6 +10,7 @@ SITEURL = ''
 TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 THEME = 'themes/pelican-octopress-theme'
+DISQUS_SITENAME='nt3rp'
 
 DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
