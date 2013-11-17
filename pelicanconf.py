@@ -12,6 +12,7 @@ DEFAULT_LANG = u'en'
 THEME = 'themes/pelican-octopress-theme'
 DISQUS_SITENAME='nt3rp'
 DEFAULT_PAGINATION = 10
+DEFAULT_CATEGORY = 'uncategorized'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
