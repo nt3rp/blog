@@ -18,7 +18,7 @@ DEFAULT_CATEGORY = 'uncategorized'
 
 # --- Navigation ---
 MENUITEMS = [
-    ('Archives', 'archives.html')
+    ('Archives', '{0}/archives.html'.format(SITEURL))
 ]
 
 # --- Sidebar --- 
