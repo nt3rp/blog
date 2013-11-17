@@ -11,10 +11,14 @@ TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = u'en'
 THEME = 'themes/pelican-octopress-theme'
 DISQUS_SITENAME='nt3rp'
-
 DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+# --- Navigation ---
+MENUITEMS = [
+    ('Archives', 'archives.html')
+]
 
 # --- Sidebar --- 
 LINKS =  (('Pelican', 'http://getpelican.com/'),
@@ -30,6 +34,7 @@ GITHUB_USER = u'nt3rp'
 GITHUB_REPO_COUNT = 5
 GITHUB_SKIP_FORK = True
 GITHUB_SHOW_USER_LINK = True
+# INLINE_DISQUSSIONS = True
 
 # --- Plugin Settings ---
 PLUGIN_PATH = 'plugins'
