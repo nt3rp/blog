@@ -13,6 +13,7 @@ THEME = 'themes/pelican-octopress-theme'
 DISQUS_SITENAME='nt3rp'
 DEFAULT_PAGINATION = 10
 DEFAULT_CATEGORY = 'uncategorized'
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
