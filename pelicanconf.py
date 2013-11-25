@@ -60,8 +60,3 @@ ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
-
-# --- Deployment ---
-FILES_TO_COPY = (
-    ('extra/robots.txt', 'robots.txt'),
-)
