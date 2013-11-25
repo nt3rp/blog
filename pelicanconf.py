@@ -2,40 +2,43 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+# --- General Settings ---
 AUTHOR = u'Nicholas Terwoord'
 SITENAME = u'NT3R'
+SITESUBTITLE=u'A blog that needs work'
 SITEURL = ''
-
 TIMEZONE = 'Europe/Paris'
-
 DEFAULT_LANG = u'en'
+THEME = 'themes/pelican-octopress-theme'
+DISQUS_SITENAME='nt3rp'
+DEFAULT_PAGINATION = 10
+DEFAULT_CATEGORY = 'uncategorized'
+DEFAULT_DATE_FORMAT = '%Y-%m-%d'
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
 
-PATH='content'
+# --- Navigation ---
+MENUITEMS = [
+    ('Archives', '{0}/archives.html'.format(SITEURL))
+]
 
-# Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
-TRANSLATION_FEED_ATOM = None
-
-# Blogroll
+# --- Sidebar --- 
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
           ('You can modify those links in your config file', '#'),)
 
-# Social widget
 SOCIAL = (('You can add links in your config file', '#'),
           ('Another social link', '#'),)
 
-DEFAULT_PAGINATION = 10
+# --- Theme-specific Settings ---
+GITHUB_USER = u'nt3rp'
+GITHUB_REPO_COUNT = 5
+GITHUB_SKIP_FORK = True
+GITHUB_SHOW_USER_LINK = True
+# INLINE_DISQUSSIONS = True
 
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
-
-# Theme setup
-THEME = 'themes/pelican-octopress-theme'
-
-# Plugin setup
+# --- Plugin Settings ---
 PLUGIN_PATH = 'plugins'
 PLUGINS = [
     'liquid_tags.img',
@@ -44,8 +47,16 @@ PLUGINS = [
     'liquid_tags.include_code',
 ]
 
-# Article paths
+# --- Source Settings ---
+PATH='content'
+STATIC_PATHS = ['images', ]
+
+# --- Paths and URIs ---
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
-STATIC_PATHS = ['images', ]
+# --- RSS Settings ---
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
