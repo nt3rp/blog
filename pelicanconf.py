@@ -48,8 +48,6 @@ PLUGINS = [
 ]
 
 # --- Source Settings ---
-PATH='content'
-STATIC_PATHS = ['images', ]
 
 # --- Paths and URIs ---
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
@@ -62,6 +60,15 @@ CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 
 # --- Page generation ---
+PATH='content'
+STATIC_PATHS = [
+    'images',
+    'extra/robots.txt',
+]
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+}
+
 PAGINATION_PATTERNS = (
     (1, '{base_name}/', '{base_name}/index.html'),
     (2, '{base_name}/page/{number}/', '{base_name}/page/{number}/index.html'),
