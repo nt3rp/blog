@@ -55,6 +55,7 @@ ARTICLE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 
 # --- RSS Settings ---
 # Feed generation is usually not desired when developing
+FEED_RSS = 'feeds/feed.rss.xml'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
