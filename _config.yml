@@ -102,7 +102,7 @@ plugins:
 deploy:
   type: s3
   bucket: blog.nt3r.com
-  region: us-west-2
+  # region: us-west-2
 
 # Theme settings:
 theme_config:
