@@ -1,0 +1,14 @@
+{
+  "name": "hexo-site",
+  "version": "2.8.2",
+  "private": true,
+  "devDependencies": {
+    "hexo": "~2.8.2",
+    "hexo-deployer-s3": "git://github.com/nt3rp/hexo-deployer-s3.git",
+    "hexo-generator-feed": "git://github.com/nt3rp/hexo-generator-feed.git",
+    "hexo-generator-sitemap": "~0.2.0",
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-marked": "*",
+    "hexo-renderer-stylus": "*"
+  }
+}
