@@ -1,6 +1,6 @@
 # Hexo Configuration
 ## Docs: http://hexo.io/docs/configuration.html
-## Source: https://github.com/tommy351/hexo/
+## Source: https://github.com/hexojs/hexo/
 
 # Site
 title: NT3R
@@ -9,59 +9,44 @@ description:
 author: Nicholas Terwoord
 email: me@nt3r.com
 language: en-US
+timezone: America/Toronto
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://blog.nt3r.com
 root: /
-permalink: :year/:month/:day/:title/
-tag_dir: tags
-archive_dir: archives
-category_dir: categories
-code_dir: downloads/code
+permalink: :year/:month/:day/:post_title/
+permalink_defaults:
 
 # Directory
 source_dir: source
 public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
 
 # Writing
 new_post_name: :year-:month-:day-:title.md # File name of new posts
 default_layout: post
-auto_spacing: false # Add spaces between asian characters and western characters
 titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
-max_open_file: 100
-multi_thread: true
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
 relative_link: false
+future: false
 highlight:
   enable: true
-  line_number: false
+  line_number: true
   tab_replace:
 
 # Category & Tag
 default_category: uncategorized
 category_map:
 tag_map:
-
-# Archives
-## 2: Enable pagination
-## 1: Disable pagination
-## 0: Fully Disable
-archive: 2
-category: 2
-tag: 2
-
-# Server
-## Hexo uses Connect as a server
-## You can customize the logger format as defined in
-## http://www.senchalabs.org/connect/logger.html
-port: 4000
-server_ip: 0.0.0.0
-logger: false
-logger_format:
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -75,36 +60,36 @@ time_format: HH:mm:ss
 per_page: 20
 pagination_dir: page
 
-# Disqus
-disqus_shortname: nt3rp
-
 # Extensions
-## Plugins: https://github.com/tommy351/hexo/wiki/Plugins
-## Themes: https://github.com/tommy351/hexo/wiki/Themes
-theme: casper 
-exclude_generator:
-
-# Feed Generator
-feed:
-  type: rss2
-  path: /feed.xml
-  limit: false
-
-# Sitemap
-sitemap:
-  path: sitemap.xml
+## Plugins: http://hexo.io/plugins/
+## Themes: http://hexo.io/themes/
+theme: casper
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
-plugins:
-- hexo-deployer-s3
-
 deploy:
   type: s3
   bucket: blog.nt3r.com
-  # region: us-west-2
+#  bucket: test-blog.nt3r.com
+#  region: us-west-2  # Only necessary when uploading to test server?
 
-# Theme settings:
+# Custom Settings
+## Archives (Pagination?)
+
+## Feed Generator
+feed:
+  type: rss2
+  path: feed.xml
+  limit: false
+
+## Sitemap
+sitemap:
+  path: sitemap.xml
+
+## Disqus
+disqus_shortname: nt3rp
+
+## Theme Settings
 theme_config:
   logo: /images/logo.png
   google_analytics: "UA-32359403-1"
