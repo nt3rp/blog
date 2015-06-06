@@ -76,6 +76,15 @@ deploy:
 # Custom Settings
 ## Archives (Pagination?)
 
+# Markdown
+markdown:
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
+
 ## Feed Generator
 feed:
   type: rss2
