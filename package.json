@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "deploy": "`npm bin`/hexo generate; `npm bin`/hexo deploy",
-    "start": "`npm bin`/hexo server"
+    "start": "`npm bin`/hexo server",
+    "windows": "`npm bin`/hexo generate; `npm bin`/hexo server -s"
   },
   "hexo": {
     "version": "3.3.5"
