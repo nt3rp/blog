@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "2.0.0",
+  "description": "Source code to manage blog.nt3r.com",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gatsby-cli": "^2.8.29"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nt3rp/blog.git"
+  },
+  "author": "Nick Terwoord",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nt3rp/blog/issues"
+  },
+  "homepage": "https://github.com/nt3rp/blog#readme"
+}
